@@ -1,5 +1,26 @@
 # AD-Lab-Generator
-Domain Generator copied from TheMayor, modified with my things.
+
+For Setting up the domain you have to run following files with the Attributes:
+
+```powershell
+Set-ExecutionPolicy unrestricted
+
+. .\Invoke-ForestDeploy
+
+Invoke-forestDeploy -DomainName Hackers.com
+```
+
+The domain controller should be rebooted and then it can be login to the domain
+
+After login run the Invoke-ADGenerator script and deplay the configuration to the Domain
+
+```powershell
+set-ExecutionPolicy unrestricted
+
+. .\Invoke-ADGenerator -DomainName Hackers.com
+
+Invoke-ADGenerator -DomainName Hackers.com
+```
 
 ## AD Lab
 
